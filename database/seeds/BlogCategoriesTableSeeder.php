@@ -28,7 +28,6 @@ class BlogCategoriesTableSeeder extends Seeder
                 'title' => $cName,
                 'slug' => str_slug($cName),
                 'parent_id' => $parentId,
-                //
             ];
         }
 
