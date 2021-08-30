@@ -20,8 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7d71349-ccf3-4fd7-9732-afeaab2e81a6" name="Default Changelist" comment="Laravel #23/DmitriyAfanasyev">
+      <change afterPath="$PROJECT_DIR$/Routes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_add_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_messages.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +72,7 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
@@ -94,7 +104,6 @@
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
@@ -156,6 +165,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
     </include_path>
   </component>
   <component name="ProjectId" id="1xDK2PBLeOiGYG5hGSwif6EUNnP" />
@@ -169,19 +181,22 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/blog/admin/posts/includes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\OneDrive - Сумський державний університет\Work\laravel-app\resources\views\blog\admin\posts\includes" />
+      <recent name="Z:\OneDrive - Сумський державний університет\Work\laravel-app\resources\views\blog\admin\posts" />
+      <recent name="Z:\OneDrive - Сумський державний університет\Work\laravel-app\app\Repositories" />
+      <recent name="D:\Work\laravel-app\app\Http\Controllers\Blog\Admin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Work\laravel-app\resources\views\blog\posts" />
       <recent name="D:\server\domains\laravel-app\app\Models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Work\laravel-app\app\Http\Controllers\Blog\Admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -209,7 +224,8 @@
       <workItem from="1629908307414" duration="759000" />
       <workItem from="1629973939084" duration="8448000" />
       <workItem from="1630087100129" duration="688000" />
-      <workItem from="1630152296632" duration="148000" />
+      <workItem from="1630152296632" duration="4825000" />
+      <workItem from="1630324683160" duration="17571000" />
     </task>
     <task id="LOCAL-00001" summary="Laravel #8/DmitriyAfanasyev">
       <created>1629377641898</created>
@@ -274,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629985688101</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Laravel #23/DmitriyAfanasyev">
+      <created>1630152495215</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1630152495216</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -321,22 +344,30 @@
     <MESSAGE value="Laravel #11/DmitriyAfanasyev" />
     <MESSAGE value="Laravel #18/DmitriyAfanasyev" />
     <MESSAGE value="Laravel #20/DmitriyAfanasyev" />
-    <MESSAGE value="Laravel #23/DmitriyAfanasyev" />
     <MESSAGE value="Laravel #25/DmitriyAfanasyev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laravel #25/DmitriyAfanasyev" />
+    <MESSAGE value="Laravel #23/DmitriyAfanasyev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel #23/DmitriyAfanasyev" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="175" key="#Intentions" timestamp="1630340369384">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state x="552" y="175" key="#Intentions/0.0.1920.1034/1920.0.1920.1040@0.0.1920.1034" timestamp="1630340369384" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1630152442643">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state x="184" y="86" key="DiffContextDialog/0.0.1920.1034/1920.0.1920.1040@0.0.1920.1034" timestamp="1630152442643" />
+    <state x="848" y="385" width="537" height="264" key="MultipleFileMergeDialog" timestamp="1630152535034">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state x="848" y="385" width="537" height="264" key="MultipleFileMergeDialog/0.0.1920.1034/1920.0.1920.1040@0.0.1920.1034" timestamp="1630152535034" />
     <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1629985700203">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1034/1920.0.1920.1040@0.0.1920.1034" timestamp="1629985700203" />
-    <state x="652" y="305" key="git4idea.merge.GitPullDialog" timestamp="1630152326503">
+    <state x="652" y="305" key="git4idea.merge.GitPullDialog" timestamp="1630152503726">
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
-    <state x="652" y="305" key="git4idea.merge.GitPullDialog/0.0.1920.1034/1920.0.1920.1040@0.0.1920.1034" timestamp="1630152326503" />
+    <state x="652" y="305" key="git4idea.merge.GitPullDialog/0.0.1920.1034/1920.0.1920.1040@0.0.1920.1034" timestamp="1630152503726" />
   </component>
 </project>
